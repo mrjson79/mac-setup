@@ -47,6 +47,7 @@
             "mas"
             "zsh-autosuggestions"
             "zsh-syntax-highlighting"
+            "oh-my-posh"
           ];
           casks = [];
         };
