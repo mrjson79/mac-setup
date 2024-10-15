@@ -40,6 +40,7 @@
           pkgs.zsh
           pkgs.zsh-autosuggestions
           pkgs.zsh-syntax-highlighting
+          pkgs.eza
         ];
         # Activate Homebrew and install brew packages
         homebrew = {
