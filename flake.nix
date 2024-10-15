@@ -38,7 +38,6 @@
           pkgs.wget
           pkgs.mkalias
           pkgs.zsh
-          pkgs.zsh-autosuggestions
           pkgs.zsh-syntax-highlighting
           pkgs.eza
         ];
@@ -47,6 +46,7 @@
           enable = true;
           brews = [
             "mas"
+            "zsh-autosuggestions"
           ];
           casks = [];
         };
