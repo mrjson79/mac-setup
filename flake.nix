@@ -39,6 +39,7 @@
           pkgs.mkalias
           pkgs.zsh
           pkgs.eza
+          pkgs.kubecolor
         ];
         # Activate Homebrew and install brew packages
         homebrew = {
