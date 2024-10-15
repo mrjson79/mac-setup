@@ -38,7 +38,6 @@
           pkgs.wget
           pkgs.mkalias
           pkgs.zsh
-          pkgs.zsh-syntax-highlighting
           pkgs.eza
         ];
         # Activate Homebrew and install brew packages
@@ -47,6 +46,7 @@
           brews = [
             "mas"
             "zsh-autosuggestions"
+            "zsh-syntax-highlighting"
           ];
           casks = [];
         };
