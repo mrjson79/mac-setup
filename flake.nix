@@ -53,6 +53,12 @@
           casks = [
 	          "vscodium"
           ];
+          # For Mac Appstore apps
+          masApps = {};
+
+          #onActivation.cleanup = "zap";
+          onActivation.autoUpdate = true;
+          onActivation.upgrade = true;
         };
 
       # Activation script for spotlight
