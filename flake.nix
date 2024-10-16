@@ -96,7 +96,7 @@
       # Add fingerprint for nix-darwin
       security.pam.enableSudoTouchIdAuth = true;
 
-      # Adding some system defaults
+      # Adding some Macos system defaults
       system.defaults = {
         dock.autohide = true;
         dock.mru-spaces = false;
