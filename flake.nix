@@ -51,7 +51,7 @@
             "oh-my-posh"
           ];
           casks = [
-	    "vscodium"
+	          "vscodium"
           ];
         };
 
