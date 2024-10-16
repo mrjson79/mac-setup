@@ -103,8 +103,12 @@
         finder.AppleShowAllExtensions= true;
         finder.FXPreferredViewStyle = "clmv";
         loginwindow.LoginwindowText = "Welcome To Work";
+        loginwindow.GuestEnabled = false;
         screencapture.location = "~/Pictures/screenshots";
         screensaver.askForPasswordDelay = 20;
+        NSGlobalDomain.AppleICUForce24HourTime = true;
+        NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        NSGlobalDomain.KeyRepeat = 2;
       };
 
       # Set Git commit hash for darwin-version.
