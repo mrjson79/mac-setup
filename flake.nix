@@ -40,6 +40,7 @@
           pkgs.zsh
           pkgs.eza
           pkgs.kubecolor
+          pkgs.jq
         ];
         # Activate Homebrew and install brew packages
         homebrew = {
