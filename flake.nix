@@ -40,7 +40,6 @@
           pkgs.zsh
           pkgs.eza
           pkgs.kubecolor
-          pkgs.vscodium
         ];
         # Activate Homebrew and install brew packages
         homebrew = {
@@ -51,7 +50,9 @@
             "zsh-syntax-highlighting"
             "oh-my-posh"
           ];
-          casks = [];
+          casks = [
+	    "vscodium"
+          ];
         };
 
       # Activation script for spotlight
