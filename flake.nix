@@ -97,6 +97,12 @@
       # Add fingerprint for nix-darwin
       security.pam.enableSudoTouchIdAuth = true;
 
+      # Home-manager config misc
+      users.users.andersjohansson.home = "/Users/andersjohansson";
+      home-manager.backupFileExtension = "backup";
+      nix.configureBuildUsers = true;
+      nix.useDaemon = true;
+
       # Adding some Macos system defaults
       system.defaults = {
         dock.autohide = true;
