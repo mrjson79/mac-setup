@@ -10,7 +10,7 @@
     
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager }:
   let
     configuration = { pkgs, config, ... }: {
 
@@ -129,6 +129,11 @@
     darwinConfigurations."work" = nix-darwin.lib.darwinSystem {
       modules = [ 
         configuration
+        home-manager.darwinModules.home-manager {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.andersjohansson = import ./home.nix
+        }
         nix-homebrew.darwinModules.nix-homebrew
         {
           nix-homebrew = {
