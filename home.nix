@@ -13,7 +13,7 @@
 
     # neofetch
   ];
-  home-sessionVariables = {
+  home.sessionVariables = {
     EDITOR = "vim";
   };
   home.file = {
