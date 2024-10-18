@@ -19,8 +19,8 @@
   home.file = {
     ".vimrc".source = ./dotfiles/vim_configuration;
     ".zshrc".source = ./dotfiles/zsh_configuration;
-    "~/dofiles/.aliases".source = ./dotfiles/aliases;
-    "~/dofiles/.kubectl_aliases".source = ./dotfiles/kubectl_aliases;
+    "~/dotfiles/.aliases".source = ./dotfiles/aliases;
+    "~/dotfiles/.kubectl_aliases".source = ./dotfiles/kubectl_aliases;
   };
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
