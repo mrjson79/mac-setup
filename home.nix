@@ -13,7 +13,12 @@
 
     # neofetch
   ];
-
+  home-sessionVariables = {
+    EDITOR = "vim";
+  };
+  home.file = {
+    ".vimrc".source = ./dotfiles/vim_configuration;
+  };
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new home Manager release introduces backwards

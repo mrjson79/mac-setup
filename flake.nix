@@ -138,6 +138,7 @@
         home-manager.darwinModules.home-manager {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.verbose = true;
           home-manager.users.andersjohansson = import ./home.nix;
         }
         nix-homebrew.darwinModules.nix-homebrew
