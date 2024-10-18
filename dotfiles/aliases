@@ -1,0 +1,26 @@
+#Aliases for Brew
+alias b=brew
+alias bu='brew update && brew upgrade'
+alias bins='brew install'
+alias breins='brew reinstall'
+alias breunins='brew uninstall'
+alias bse='brew search'
+alias buns='brew uninstall'
+
+#Aliases for Terraform
+alias tp='tofu plan'
+alias ta='tofu apply'
+alias td='tofu destroy'
+
+#Aliases for Git
+alias gs='git status'
+alias gpb='git pull --rebase'
+alias gcb='git checkout -b'
+alias gsw='git switch'
+alias gb='git branch'
+
+#Aliases for Kubectl
+alias kubectl=kubecolor
+
+# Misc aliases
+alias ls='eza -a -l' #needs eza installed
