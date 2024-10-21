@@ -2,7 +2,7 @@
 
 ## todo:
 
-migrate from the ansiblebot
+* migrate from the ansiblebot
 
 * divide between diffrent and more focused flakes
   1. darwin
