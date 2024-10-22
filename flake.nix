@@ -41,6 +41,7 @@
           pkgs.eza
           pkgs.kubecolor
           pkgs.jq
+          pkgs.opentofu
         ];
         # Activate Homebrew and install brew packages
         homebrew = {
@@ -53,6 +54,9 @@
           ];
           casks = [
 	          "vscodium"
+            "duckduckgo"
+            "mullvad-browse"
+            "slack"
           ];
           # For Mac Appstore apps
           masApps = {};
