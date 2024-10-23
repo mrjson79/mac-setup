@@ -52,7 +52,6 @@
           pkgs.pwgen
           pkgs.talosctl
           pkgs.raycast
-          pkgs.warp-terminal
           pkgs.vscodium
         ];
         # Activate Homebrew and install brew packages
@@ -70,6 +69,7 @@
             "mullvad-browser"
             "slack"
             "vmware-fusion"
+            "warp"
           ];
           # For Mac Appstore apps
           masApps = {};
