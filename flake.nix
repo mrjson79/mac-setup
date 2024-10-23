@@ -44,6 +44,15 @@
           pkgs.opentofu
           pkgs.kubectx
           pkgs.terraform-ls
+          pkgs.yq
+          pkgs.terraform-docs
+          pkgs.pre-commit
+          pkgs.tfsec
+          pkgs.checkov
+          pkgs.pwgen
+          pkgs.talosctl
+          pkgs.raycast
+          pkgs.warp-terminal
         ];
         # Activate Homebrew and install brew packages
         homebrew = {
@@ -53,13 +62,14 @@
             "zsh-autosuggestions"
             "zsh-syntax-highlighting"
             "oh-my-posh"
-            "kubernetes-clis"
+            "kubernetes-cli"
           ];
           casks = [
 	          "vscodium"
             "duckduckgo"
-            "mullvad-browse"
+            "mullvad-browser"
             "slack"
+            "vmware-fusion"
           ];
           # For Mac Appstore apps
           masApps = {};
