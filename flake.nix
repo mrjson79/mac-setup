@@ -42,6 +42,8 @@
           pkgs.kubecolor
           pkgs.jq
           pkgs.opentofu
+          pkgs.kubectx
+          pkgs.terraform-ls
         ];
         # Activate Homebrew and install brew packages
         homebrew = {
@@ -51,6 +53,7 @@
             "zsh-autosuggestions"
             "zsh-syntax-highlighting"
             "oh-my-posh"
+            "kubernetes-clis"
           ];
           casks = [
 	          "vscodium"
