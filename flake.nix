@@ -53,6 +53,7 @@
           pkgs.talosctl
           pkgs.raycast
           pkgs.warp-terminal
+          pkgs.vscodium
         ];
         # Activate Homebrew and install brew packages
         homebrew = {
@@ -65,7 +66,6 @@
             "kubernetes-cli"
           ];
           casks = [
-	          "vscodium"
             "duckduckgo"
             "mullvad-browser"
             "slack"
