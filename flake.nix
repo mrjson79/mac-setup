@@ -122,14 +122,22 @@
 
       # Adding some Macos system defaults
       system.defaults = {
+        #dock
         dock.autohide = true;
         dock.mru-spaces = false;
+        dock.appswitcher-all-displays = true;
+        dock.tilesize = 48;
+        dock.orientation = "left";
+        #finder
         finder.AppleShowAllExtensions= true;
         finder.FXPreferredViewStyle = "clmv";
+        #loginwindow
         loginwindow.LoginwindowText = "Welcome To Work";
         loginwindow.GuestEnabled = false;
+        #screencapture
         screencapture.location = "~/Pictures/screenshots";
         screensaver.askForPasswordDelay = 20;
+        #NSGlobalDomain
         NSGlobalDomain.AppleICUForce24HourTime = true;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
         NSGlobalDomain.KeyRepeat = 2;
