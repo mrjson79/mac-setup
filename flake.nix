@@ -6,11 +6,12 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
 
     
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, nix-vscode-extensions }:
   let
     configuration = { pkgs, config, ... }: {
 
@@ -52,7 +53,6 @@
           pkgs.pwgen
           pkgs.talosctl
           pkgs.raycast
-          pkgs.vscodium
         ];
         # Activate Homebrew and install brew packages
         homebrew = {
@@ -157,6 +157,10 @@
           home-manager.useUserPackages = true;
           home-manager.verbose = true;
           home-manager.users.andersjohansson = import ./home.nix;
+
+          nixpkgs.overlays = [
+            inputs.nix-vscode-extensions.overlays.default
+          ];
         }
         nix-homebrew.darwinModules.nix-homebrew
         {

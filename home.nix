@@ -22,6 +22,25 @@
     "./dotfiles/.aliases".source = ./dotfiles/aliases;
     "./dotfiles/.kubectl_aliases".source = ./dotfiles/kubectl_aliases;
   };
+
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscodium;
+
+    mutableExtensionsDir = false;
+    enableUpdateCheck = false;
+    enableExtensionUpdateCheck = false;
+
+    extensions = with pkgs.open-vsx; [
+      # https://raw.githubusercontent.com/nix-community/nix-vscode-extensions/master/data/cache/open-vsx-latest.json
+      leodevbro.blockman
+      bbenoist.nix
+      pinage404.nix-extension-pack
+      jnoortheen.nix-ide
+      oderwat.indent-rainbow
+      hashicorp.hcl
+    ];
+  };
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new home Manager release introduces backwards
