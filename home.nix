@@ -39,7 +39,11 @@
       jnoortheen.nix-ide
       oderwat.indent-rainbow
       hashicorp.hcl
-    ];
+    ] ++ (with  pkgs.vscode-marketplace; [
+      # https://raw.githubusercontent.com/nix-community/nix-vscode-extensions/master/data/cache/vscode-marketplace-latest.json
+      ms-vscode-remote.vscode-remote-extensionpack
+      ms-vscode.remote-explorer
+    ]);
   };
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
