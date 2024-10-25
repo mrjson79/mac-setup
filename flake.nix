@@ -130,7 +130,13 @@
         dock.orientation = "left";
         #finder
         finder.AppleShowAllExtensions= true;
+        finder.FXDefaultSearchScope = "SCcf";
         finder.FXPreferredViewStyle = "clmv";
+        finder.FXEnableExtensionChangeWarning = false;
+        #finder.FXRemoveOldTrashItems = true; maybe home-manager
+        #finder.NewWindowTarget = "PfHm"; maybe home-manager
+        #finder.ShowRecentTags = true; maybe home-manager
+        #finder.WarnOnEmptyTrash = false; maybe home-manager
         #loginwindow
         loginwindow.LoginwindowText = "Welcome To Work";
         loginwindow.GuestEnabled = false;
@@ -139,8 +145,12 @@
         screensaver.askForPasswordDelay = 20;
         #NSGlobalDomain
         NSGlobalDomain.AppleICUForce24HourTime = true;
+        NSGlobalDomain.AppleKeyboardUIMode = 3;
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
         NSGlobalDomain.KeyRepeat = 2;
+        NSGlobalDomain.NSAutomaticDashSubstitutionEnabled = false;
+        NSGlobalDomain.NSAutomaticQuoteSubstitutionEnabled = false;
+        NSGlobalDomain.NSAutomaticSpellingCorrectionEnabled = false;
       };
 
       # Set Git commit hash for darwin-version.
