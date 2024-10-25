@@ -59,9 +59,6 @@
           enable = true;
           brews = [
             "mas"
-            "zsh-autosuggestions"
-            "zsh-syntax-highlighting"
-            "oh-my-posh"
             "kubernetes-cli"
           ];
           casks = [

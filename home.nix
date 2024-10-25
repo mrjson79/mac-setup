@@ -39,6 +39,7 @@
       jnoortheen.nix-ide
       oderwat.indent-rainbow
       hashicorp.hcl
+      bungcip.better-toml
     ] ++ (with  pkgs.vscode-marketplace; [
       # https://raw.githubusercontent.com/nix-community/nix-vscode-extensions/master/data/cache/vscode-marketplace-latest.json
       ms-vscode-remote.vscode-remote-extensionpack
@@ -51,16 +52,19 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
     initExtra = "
-    if [ -f $HOME/.config/nix/dotfiles/.zshrc ];
-    then
-      source $HOME/.config/nix/dotfiles/.zshrc
-    fi
-    ";
-
+if [ -f $HOME/.config/nix/dotfiles/.zshrc ]; 
+then
+  source $HOME/.config/nix/dotfiles/.zshrc
+fi
+";
     history = {
       save = 1000000;
       size = 1000000;
     };
+  };
+  programs.oh-my-posh = {
+    enable = true;
+    enableZshIntegration = true;
   };
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
