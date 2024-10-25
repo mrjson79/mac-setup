@@ -18,7 +18,7 @@
   };
   home.file = {
     ".vimrc".source = ./dotfiles/vim_configuration;
-    ".zshrc".source = ./dotfiles/zsh_configuration;
+   # ".zshrc".source = ./dotfiles/zsh_configuration;
     "./dotfiles/.aliases".source = ./dotfiles/aliases;
     "./dotfiles/.kubectl_aliases".source = ./dotfiles/kubectl_aliases;
   };
@@ -44,6 +44,23 @@
       ms-vscode-remote.vscode-remote-extensionpack
       ms-vscode.remote-explorer
     ]);
+  };
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    initExtra = "
+    if [ -f $HOME/.config/nix/dotfiles/.zshrc ];
+    then
+      source $HOME/.config/nix/dotfiles/.zshrc
+    fi
+    ";
+
+    history = {
+      save = 1000000;
+      size = 1000000;
+    };
   };
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage
