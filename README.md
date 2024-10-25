@@ -7,4 +7,4 @@
 * divide between diffrent and more focused flakes
   1. darwin
   2. shell
-  3. home-manage
+  3. home-manager
